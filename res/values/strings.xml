@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Poop Wage</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name_headline">Poop Wage</string>
+    <string name="enter_wage">Enter your hourly wage:</string>
+    <string name="iskPh">ISK/h</string>
+    <string name="btnAccept">Accept</string>
+    <string name="title_activity_timer">Timer</string>
+
+</resources>

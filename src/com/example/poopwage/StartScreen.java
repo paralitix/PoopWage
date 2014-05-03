@@ -19,7 +19,7 @@ public class StartScreen extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_screen);
 		
-		acceptButton = (Button)findViewById(R.id.button1);
+		acceptButton = (Button)findViewById(R.id.stopButton);
 		wageEditText = (EditText)findViewById(R.id.editText1);
 		
 		acceptButton.setOnClickListener(this);

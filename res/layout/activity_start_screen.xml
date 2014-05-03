@@ -9,7 +9,7 @@
     tools:context=".StartScreen" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textfield"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -22,7 +22,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/stopButton"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
@@ -36,7 +36,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/textfield"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="96dp"
         android:text="@string/enter_wage"

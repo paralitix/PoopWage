@@ -8,4 +8,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Timer" >
 
+    <TextView
+        android:id="@+id/TVTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textfield"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:minHeight="35dp"
+        android:minWidth="120dp" />
+
+    <TextView
+        android:id="@+id/textfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TVTimer"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="86dp"
+        android:minHeight="35dp"
+        android:minWidth="120dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVTimer"
+        android:layout_centerHorizontal="true"
+        android:minWidth="120dp"
+        android:text="Stop"
+        android:onClick="stop"/>
+
 </RelativeLayout>

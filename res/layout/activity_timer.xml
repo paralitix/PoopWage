@@ -28,14 +28,36 @@
         android:minHeight="35dp"
         android:minWidth="120dp" />
 
-    <Button
-        android:id="@+id/stopButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TVTimer"
-        android:layout_centerHorizontal="true"
-        android:minWidth="120dp"
-        android:text="Stop"
-        android:onClick="stop"/>
+	<Button
+	    android:id="@+id/goButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/stopButton"
+	    android:layout_alignBottom="@+id/stopButton"
+	    android:layout_toRightOf="@+id/stopButton"
+	    android:minWidth="120dp"
+	    android:onClick="nextPage"
+	    android:text="Next" />
 
+	<Button
+	    android:id="@+id/stopButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/TVTimer"
+	    android:layout_marginLeft="19dp"
+	    android:minWidth="120dp"
+	    android:onClick="stop"
+	    android:text="Stop" />
+
+	<Button
+	    android:id="@+id/tweet"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/stopButton"
+	    android:layout_alignRight="@+id/goButton"
+	    android:layout_below="@+id/stopButton"
+	    android:text="Tweet That Shit"
+	    android:onclick="tweetThatShit" />
+    
 </RelativeLayout>

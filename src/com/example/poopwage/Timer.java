@@ -24,12 +24,26 @@ public class Timer extends Activity {
 
 	public void stop(View view){
 		stopped = true;
-		Intent endPageIntent = new Intent(this, EndPage.class);
-		Log.d("intent","intent has been created");
-		endPageIntent.putExtra("time", number);
-		endPageIntent.putExtra("moneyEarned", moneyEarned);
-		Log.d("intent","intent variables have been added");
-		startActivity(endPageIntent);
+	}
+	
+	public void nextPage(View view){
+		if(stopped = true){
+
+			Intent endPageIntent = new Intent(this, EndPage.class);
+			Log.d("intent","intent has been created");
+			endPageIntent.putExtra("time", number);
+			endPageIntent.putExtra("moneyEarned", moneyEarned);
+			Log.d("intent","intent variables have been added");
+			startActivity(endPageIntent);
+		}
+	}
+	
+	public void tweetThatShit(View view){
+		String statusText = editStatus.getText().toString();
+		
+		String tweetUrl = "https://twitter.com/intent/tweet?text="+statusText;
+		Uri uri = Uri.parse(tweetUrl);
+		startActivity(new Intent(Intent.ACTION_VIEW, uri));
 	}
 	
 	@Override
@@ -66,8 +80,8 @@ public class Timer extends Activity {
 							if(stopped == false){
 								number+=1;
 								moneyEarned = Math.round(number*hourlyWage/3600);
-								textfield.setText(String.valueOf(number));
-								textfield2.setText(String.valueOf(moneyEarned));
+								textfield.setText("Time: " + String.valueOf(number)+" Seconds");
+								textfield2.setText("Money: " + String.valueOf(moneyEarned)+"Kr.");
 								Log.d("wage", String.valueOf(hourlyWage));
 								Log.d("payEarned", String.valueOf(number*hourlyWage/3600));
 							}

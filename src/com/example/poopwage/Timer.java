@@ -26,6 +26,10 @@ public class Timer extends Activity {
 	public void stop(View view){
 		stopped = true;
 		Log.d("button","stopping counter");
+		Intent endPageIntent = new Intent(this, EndPage.class);
+		endPageIntent.putExtra("time", number);
+		endPageIntent.putExtra("moneyEarned", moneyEarned);
+		startActivity(endPageIntent);
 	}
 	
 	@Override

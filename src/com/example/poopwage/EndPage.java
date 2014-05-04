@@ -25,6 +25,6 @@ public class EndPage extends Activity{
 		Log.d("Intent Received", "Time: " + time + "   Money: " + moneyEarned);
 		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_end_page);
+		setContentView(R.layout.end_page);
 	}
 }

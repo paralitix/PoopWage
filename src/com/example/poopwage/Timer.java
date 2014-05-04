@@ -20,15 +20,15 @@ public class Timer extends Activity {
 	private boolean Running = true;
 	private int hourlyWage;
 	private boolean stopped  = false;
-	Button stopButton;
 
 
 	public void stop(View view){
 		stopped = true;
-		Log.d("button","stopping counter");
 		Intent endPageIntent = new Intent(this, EndPage.class);
+		Log.d("intent","intent has been created");
 		endPageIntent.putExtra("time", number);
 		endPageIntent.putExtra("moneyEarned", moneyEarned);
+		Log.d("intent","intent variables have been added");
 		startActivity(endPageIntent);
 	}
 	
